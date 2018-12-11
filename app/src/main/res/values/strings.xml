@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">VendorApp</string>
+    <string name="drawer_item_crossfade_drawer_layout_drawer">CrossfadeDrawerLayout</string>
+    <string name="map_debug_api_key">AIzaSyCMZfA4OezZzHJNT-QjrWRNaMJMtQgIQU0</string>
+    <string name="map_release_api_key">AIzaSyAfIg91k_Tnv-cAk5U_p8mbJyNkN5ufLv4</string>
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_settings1">Settings 1</string>
+    <string name="drawer_item_settings2">Settings 2</string>
+    <string name="drawer_item_settings3">Settings 3</string>
+    <string name="drawer_item_settings4">Settings 4</string>
+    <string name="drawer_item_dialog">Drawer Dialog</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="reset_password"><u>Reset Password</u></string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="password_condition">Minimum eight and maximum 10 characters, at least one uppercase letter, one lowercase letter, one number and one special character</string>
+    <string name="no_acc_sign_up"><u>No account yet? Create one</u></string>
+    <string name="privacy_policy"><u>Privacy Policy and T&amp;C</u></string>
+    <string name="sign_in"><u>Sign In</u></string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="otp_nt_recvd"><u>Not Recived OTP,</u></string>
+    <string name="otp_clk_hr"><u> Click Here</u></string>
+    <string name="thank_you_for_order">Thank you for placing your order</string>
+    <string name="order_type">Order Type:</string>
+    <string name="date">Date:</string>
+    <string name="order_details">Order Details:</string>
+    <string name="amount">Amount:</string>
+    <string name="tiffin_no">Tiffin No:</string>
+    <string name="order_no">Order No:</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="ms_dtls">Mess Details</string>
+    <string name="map">Map</string>
+    <string name="my_addr">My Address</string>
+    <string name="change">Change</string>
+    <string name="procd_to_paymnt">Proceed to Payment</string>
+    <string name="food_name">Food Name</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="service">Service</string>
+    <string name="discount">Discount</string>
+    <string name="remove">Remove</string>
+    <string name="update">Update</string>
+
+    // Used for Alert View
+    <string name="alert_dialog_title"></string>
+
+    // Card View
+    <string name="card_view_action_settings">Settings</string>
+    <string name="card_view_action_order">Order</string>
+    <string name="card_view_action_add_to_cart">Add to Cart</string>
+    <string name="card_view_action_add_favourite">Add to Favourites</string>
+    <string name="card_view_action_like">Like</string>
+    <string name="card_view_action_donate">Donate</string>
+    <string name="card_view_backdrop_title">LOVE MUSIC</string>
+    <string name="card_view_backdrop_subtitle">This season top 20 albums</string>
+
+
+    <string name="select_lunch_adds">Click to change food address</string>
+    <string name="select_dinnr_adds">Click to change food address</string>
+    <string name="mess_name_or_order_no">Mess Name/Order No.</string>
+    <string name="contact_me">Contact me by Phone/Email</string>
+</resources>
+

@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_layout_margin">5dp</dimen>
+    <dimen name="theme_tv_size_small">15sp</dimen>
+    <dimen name="theme_tv_size_medium">18sp</dimen>
+    <dimen name="theme_tv_size_large">24sp</dimen>
+    <dimen name="theme_tv_title_size_small">30sp</dimen>
+    <dimen name="theme_tv_title_size_medium">50sp</dimen>
+    <dimen name="theme_tv_title_size_large">60sp</dimen>
+
+
+    <!-- Cardview -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_offset">10dp</dimen>
+    <dimen name="detail_backdrop_height">250dp</dimen>
+    <dimen name="backdrop_title">30dp</dimen>
+    <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_view_radius">0dp</dimen>
+    <dimen name="card_view_cover_height">160dp</dimen>
+    <dimen name="card_view_title_padding">10dp</dimen>
+    <dimen name="card_view_title">15dp</dimen>
+    <dimen name="card_view_padding_bottom">5dp</dimen>
+    <dimen name="card_view_count">12dp</dimen>
+    <dimen name="card_view_overflow_width">20dp</dimen>
+    <dimen name="card_view_overflow_height">30dp</dimen>
+    <dimen name="card_view_overflow_margin_top">10dp</dimen>
+
+
+    <!-- New Home Screen design -->
+    <dimen name="material_drawer_item_primary_text">14sp</dimen>
+    <dimen name="home_screen_card_view_width">120dp</dimen>
+    <dimen name="home_screen_card_view_height">120dp</dimen>
+    <dimen name="tv_home_screen_business_figure_size">15sp</dimen>
+    <dimen name="tv_home_screen_product_size">10sp</dimen>
+    <dimen name="tv_home_screen_user_info_size">10sp</dimen>
+    <dimen name="tv_home_screen_title_size">17sp</dimen>
+    <dimen name="actionbar_icon_width">50dp</dimen>
+    <dimen name="actionbar_icon_height">50dp</dimen>
+    <dimen name="drawer_secondary_item_padding_left">20dp</dimen>
+
+    <dimen name="health_cust_text_size">15dp</dimen>
+    <dimen name="health_title_cust_text_size">18dp</dimen>
+    <dimen name="qutation_sub_title_size">15dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="cust_edittext_textsize_22">20sp</dimen>
+    <dimen name="textsize_20_sp">20sp</dimen>
+    <dimen name="margin_10_dp">10dp</dimen>
+    <dimen name="textsize_13_sp">13sp</dimen>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/material_drawer_accent" />
+
+    <item>
+        <bitmap
+            android:gravity="fill"
+            android:src="@mipmap/vendor_icon" />
+    </item>
+
+</layer-list>
