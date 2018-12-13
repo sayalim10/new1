@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/id_mess_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progress_bar_dialog_animation"
+        android:indeterminateTint="@color/theme_tv_white"
+        android:indeterminateTintMode="src_atop"
+        android:padding="30dp"></ProgressBar>
+
+    <TextView
+        android:id="@+id/id_mess_progress_dialog_lable_tv"
+        style="@style/style_tv_large"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="Loading..."
+        android:textStyle="bold" />
+</LinearLayout>

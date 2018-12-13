@@ -1,0 +1,258 @@
+<resources>
+
+    <!-- start **** Application theme. -->
+    <style name="MaterialDrawerTheme.TranslucentStatus" parent="MaterialTheme.TranslucentStatus">
+        <!-- Here we setting appcompat’s actionBarStyle -->
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+        <item name="colorPrimary">@color/material_drawer_primary</item>
+        <item name="colorPrimaryDark">@color/material_drawer_primary_dark</item>
+        <item name="colorAccent">@color/material_drawer_accent</item>
+        <item name="android:windowBackground">@color/md_white_1000</item>
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+    </style>
+    <!-- end **** Application theme. -->
+
+    <!-- start *** splash screen **** -->
+    <style name="splash_screen_theme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_layer</item>
+    </style>
+    <!-- start *** splash screen **** -->
+
+    <!-- start ***  TextView Style-->
+
+    <style name="TextViewStyle" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textColor">@color/theme_tv_black</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="style_tv_small" parent="TextViewStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="style_tv_medium" parent="TextViewStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="style_tv_large" parent="TextViewStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+    <!-- end ***  TextView Style -->
+
+
+    <!-- start ***  TextView Style-->
+
+    <style name="EditTextStyle" parent="TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_tv_black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="style_et_small" parent="EditTextStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="style_et_medium" parent="EditTextStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="style_et_large" parent="EditTextStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+    <!-- end ***  TextView Style -->
+
+    <!-- start ***  Button Style-->
+
+    <style name="ButtonStyle" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_tv_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="button_small" parent="ButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="button_medium" parent="ButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="button_large" parent="ButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+
+    <style name="button_style_tab" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_tv_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:background">@drawable/selector_select_unselect</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="button_style_tab_small" parent="button_style_tab">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="button_style_tab_medium" parent="button_style_tab">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="button_style_tab_large" parent="button_style_tab">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+
+    <!-- end ***  Button Style -->
+
+    <!-- start ***  CheckBox Style-->
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_tv_black</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:buttonTint">@color/button_selector</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="checkbox_small" parent="CheckBoxStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="checkbox_medium" parent="CheckBoxStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="checkbox_large" parent="CheckBoxStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+    <!-- end ***  CheckBox Style -->
+
+
+    <!-- start ***  TextInputLayout Style -->
+    <style name="style_textinputlayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:textColorHint">@color/hint_txt_color</item>
+    </style>
+    <!-- end ***  TextInputLayout Style -->
+
+    <!-- Alert Dialog Theme -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/theme_tv_white</item>
+        <item name="android:textColorPrimary">@color/theme_tv_white</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+        <item name="android:keyTextSize">@dimen/theme_tv_size_large</item>
+        <item name="android:labelTextSize">@dimen/theme_tv_size_large</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <!-- Error Appearance Theme -->
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/md_red_500</item>
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- start *** Floating action  Button Style-->
+
+    <style name="FloatingButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_tv_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/selector_button</item>
+    </style>
+    <!-- Font: Small -->
+    <style name="floating_button_small" parent="FloatingButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_small</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="floating_button_medium" parent="FloatingButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_medium</item>
+    </style>
+
+    <!-- Font: Medium -->
+    <style name="floating_button_large" parent="FloatingButtonStyle">
+        <item name="android:textSize">@dimen/theme_tv_size_large</item>
+    </style>
+    <!-- end ***  Floating action  Button Style -->
+
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="my_theme" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#E0F2F7</item>
+        <item name="android:textColor">#0A0A2A</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+</resources>

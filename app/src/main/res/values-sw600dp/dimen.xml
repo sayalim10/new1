@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="material_drawer_item_primary_text">16sp</dimen>
+    <dimen name="home_screen_card_view_width">200dp</dimen>
+    <dimen name="home_screen_card_view_height">200dp</dimen>
+    <dimen name="tv_home_screen_business_figure_size">25sp</dimen>
+    <dimen name="tv_home_screen_product_size">20sp</dimen>
+    <dimen name="tv_home_screen_user_info_size">15sp</dimen>
+    <dimen name="tv_home_screen_title_size">30sp</dimen>
+    <dimen name="actionbar_icon_width">80dp</dimen>
+    <dimen name="actionbar_icon_height">80dp</dimen>
+
+    <dimen name="health_cust_text_size">18dp</dimen>
+    <dimen name="health_title_cust_text_size">25dp</dimen>
+    <dimen name="qutation_sub_title_size">20dp</dimen>
+</resources>
