@@ -30,7 +30,20 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [appName: "FDS"]
+            buildConfigField('String', "HOST", '"http://server.aminfotech.com/wp-json/"')
+//            signingConfig signingConfigs.config
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [appName: "FDS_Test"]
+            buildConfigField('String', "HOST", '"http://server.aminfotech.com/wp-json/"')
+//            signingConfig signingConfigs.config
         }
     }
 }
