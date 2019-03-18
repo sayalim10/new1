@@ -13,7 +13,8 @@
         android:indeterminateDrawable="@drawable/progress_bar_dialog_animation"
         android:indeterminateTint="@color/theme_tv_white"
         android:indeterminateTintMode="src_atop"
-        android:padding="30dp"></ProgressBar>
+        android:padding="30dp">
+    </ProgressBar>
 
     <TextView
         android:id="@+id/id_mess_progress_dialog_lable_tv"

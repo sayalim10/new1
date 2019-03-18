@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            style="@style/style_tv_medium"
+            android:text="Privacy Policy:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_contact_us_mail_tv"
+            style="@style/style_tv_medium"
+            android:singleLine="false"
+            android:text="Privacy Policy will be displayed here" />
+    </LinearLayout>
+</LinearLayout>

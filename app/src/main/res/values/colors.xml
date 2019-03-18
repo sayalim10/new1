@@ -56,6 +56,7 @@
 
     <!-- Button Selector color -->
     <color name="button_selector">@color/colorPrimary</color>
+    <color name="button_cancel">#FFF52121</color>
     <color name="button_unselector">#300080ff</color>
     <color name="toggle_btn_line_on">#6dd988</color>
     <color name="toggle_btn_line_off">@color/colorAccent</color>
@@ -66,4 +67,17 @@
     <!-- Button Green Selector -->
     <color name="green_selector_pressed_color">@color/md_green_500</color>
     <color name="green_selector_color">@color/md_green_300</color>
+
+    <!-- Button Red Selector -->
+    <color name="red_selector_pressed_color">@color/md_red_500</color>
+    <color name="red_selector_color">@color/md_red_300</color>
+
+
+    <!-- Selector -->
+
+    <color name="colorsecond">#f9be3e</color>
+    <color name="colorlink">#0717ce</color>
+    <color name="fontcolor">#040404</color>
+    <color name="colorback">#f9be3e</color>
+    <color name="colorthird">#ffffff</color>
 </resources>

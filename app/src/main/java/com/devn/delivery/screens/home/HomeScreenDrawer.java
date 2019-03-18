@@ -30,19 +30,18 @@ import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.devn.delivery.controller.menu.Menu.MENU_ABOUT_US;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_PROFILE_TITLE;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_ORDERS;
-import static com.devn.delivery.controller.menu.Menu.MENU_FEEDBACK;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_WALLET;
-import static com.devn.delivery.controller.menu.Menu.MENU_NOTIFICATIONS;
+import static com.devn.delivery.controller.menu.Menu.MENU_MY_PROFILE;
+import static com.devn.delivery.controller.menu.Menu.MENU_ORDER_COLLECTION;
+import static com.devn.delivery.controller.menu.Menu.MENU_DISTRIBUTION;
+import static com.devn.delivery.controller.menu.Menu.MENU_DC_COLLETION;
+import static com.devn.delivery.controller.menu.Menu.MENU_CUSTOMER_DELIVERY;
+import static com.devn.delivery.controller.menu.Menu.MENU_RETURN_PROCESSING;
 import static com.devn.delivery.controller.menu.Menu.MENU_EXIT_APP;
-import static com.devn.delivery.controller.menu.Menu.MENU_HOME_PAGE;
-import static com.devn.delivery.controller.menu.Menu.MENU_PAYMENT;
+import static com.devn.delivery.controller.menu.Menu.MENU_FEEDBACK;
+import static com.devn.delivery.controller.menu.Menu.MENU_OTHER;
 import static com.devn.delivery.controller.menu.ProfileSetter.getProfilePic;
 
 /**
- * Created by Nitin.Kalokhe on 21-06-2017.
  */
 
 public class HomeScreenDrawer implements IRightsListener, Constants {
@@ -125,7 +124,8 @@ public class HomeScreenDrawer implements IRightsListener, Constants {
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean
+    onOptionsItemSelected(MenuItem item) {
         return true;
 //        // Handle item selection
 //        switch (item.getItemId()) {
@@ -173,7 +173,7 @@ public class HomeScreenDrawer implements IRightsListener, Constants {
 
     private IDrawerItem[] getDrawerItems() {
         ArrayList<IDrawerItem> menus = new ArrayList();
-        menus.add(new PrimaryDrawerItem().withName(MENU_HOME_PAGE.getMenu()).withIcon((int) MENU_HOME_PAGE.getId()).withIconTintingEnabled(true).withIdentifier(MENU_HOME_PAGE.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_MY_PROFILE.getMenu()).withIcon((int) MENU_MY_PROFILE.getId()).withIconTintingEnabled(true).withIdentifier(MENU_MY_PROFILE.getId()));
         addMenuItems(menus);
         IDrawerItem[] myItems = new IDrawerItem[menus.size()];
         menus.toArray(myItems);
@@ -183,13 +183,14 @@ public class HomeScreenDrawer implements IRightsListener, Constants {
 
     private void addMenuItems(List<IDrawerItem> menus) {
 //        menus.add(new PrimaryDrawerItem().withName(MENU_MY_PROFILE_TITLE.getMenu()).withIcon((int) MENU_MY_PROFILE_TITLE.getId()).withIconTintingEnabled(true).withIdentifier(MENU_MY_PROFILE_TITLE.getId()).withIconTintingEnabled(true).withBadge(">").withBadgeStyle(new BadgeStyle(ContextCompat.getColor(mContext, R.color.md_white_1000), ContextCompat.getColor(mContext, R.color.colorPrimary)).withTextColor(ContextCompat.getColor(mContext, R.color.colorPrimary))));
-        menus.add(new PrimaryDrawerItem().withName(MENU_MY_PROFILE_TITLE.getMenu()).withIcon((int) MENU_MY_PROFILE_TITLE.getId()).withIconTintingEnabled(true).withIdentifier(MENU_MY_PROFILE_TITLE.getId()).withIconTintingEnabled(true).withBadge(">").withTextColor(ContextCompat.getColor(mContext, R.color.colorPrimary)));
-        menus.add(new PrimaryDrawerItem().withName(MENU_MY_ORDERS.getMenu()).withIcon((int) MENU_MY_ORDERS.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_MY_ORDERS.getId()));
-        menus.add(new PrimaryDrawerItem().withName(MENU_PAYMENT.getMenu()).withIcon((int) MENU_PAYMENT.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_PAYMENT.getId()));
-        menus.add(new PrimaryDrawerItem().withName(MENU_MY_WALLET.getMenu()).withIcon((int) MENU_MY_WALLET.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_MY_WALLET.getId()));
-        menus.add(new PrimaryDrawerItem().withName(MENU_NOTIFICATIONS.getMenu()).withIcon((int) MENU_NOTIFICATIONS.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_NOTIFICATIONS.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_ORDER_COLLECTION.getMenu()).withIcon((int) MENU_ORDER_COLLECTION.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_ORDER_COLLECTION.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_DISTRIBUTION.getMenu()).withIcon((int) MENU_DISTRIBUTION.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_DISTRIBUTION.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_DC_COLLETION.getMenu()).withIcon((int) MENU_DC_COLLETION.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_DC_COLLETION.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_CUSTOMER_DELIVERY.getMenu()).withIcon((int) MENU_CUSTOMER_DELIVERY.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_CUSTOMER_DELIVERY.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_RETURN_PROCESSING.getMenu()).withIcon((int) MENU_RETURN_PROCESSING.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_RETURN_PROCESSING.getId()));
+
         menus.add(new PrimaryDrawerItem().withName(MENU_FEEDBACK.getMenu()).withIcon((int) MENU_FEEDBACK.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_FEEDBACK.getId()));
-        menus.add(new PrimaryDrawerItem().withName(MENU_ABOUT_US.getMenu()).withIcon((int) MENU_ABOUT_US.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_ABOUT_US.getId()));
+        menus.add(new PrimaryDrawerItem().withName(MENU_OTHER.getMenu()).withIcon((int) MENU_OTHER.getId()).withIconTintingEnabled(true).withBadge(">").withIdentifier(MENU_OTHER.getId()));
     }
 
 
