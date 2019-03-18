@@ -63,7 +63,8 @@ dependencies {
 //    compile 'com.github.stephenbaidu:placepicker:1.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-places:11.6.0'
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.' +
+            'google.code.gson:gson:2.8.2'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 //    implementation 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;

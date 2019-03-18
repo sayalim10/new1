@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.devn.delivery.screens.login.LoginScreen;
 import com.devn.delivery.utils.Functions;
 import com.devn.delivery.welcome.DisclaimerScreen;
 
@@ -20,7 +21,7 @@ public class SplashScreen extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Functions.launch(SplashScreen.this, DisclaimerScreen.class);
+              Functions.launch(SplashScreen.this, LoginScreen.class);
                 SplashScreen.this.finish();
             }
         }, 2000);

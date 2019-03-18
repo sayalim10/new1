@@ -27,8 +27,10 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
                     android:gravity="center"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
 
                     <ImageView
                         android:id="@+id/id_toolbar_iv"
@@ -39,6 +41,28 @@
                         android:foregroundGravity="center_horizontal"
                         android:scaleType="fitStart"
                         android:src="@mipmap/eatpm_logo" />
+
+                    <TextView
+                        android:id="@+id/id_toolbar_action_title_tv"
+                        style="@style/style_tv_medium"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        android:shadowColor="@color/cardview_dark_background"
+                        android:shadowDx="0"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:textColor="@color/theme_tv_white"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/n"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/r"
+                        android:layout_marginTop="5dp"
+                         />
 
                 </RelativeLayout>
             </android.support.v7.widget.Toolbar>
