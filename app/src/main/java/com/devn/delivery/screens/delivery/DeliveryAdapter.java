@@ -80,18 +80,18 @@ public class DeliveryAdapter extends RecyclerView.Adapter<DeliveryAdapter.Delive
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
             switch (menuItem.getItemId()) {
-                case R.id.action_order:
-                    Toast.makeText(mContext, "Ordered", Toast.LENGTH_SHORT).show();
+                case R.id.action_reject:
+                    Toast.makeText(mContext, "Are you sure want to reject the order", Toast.LENGTH_SHORT).show();
                     return true;
-                case R.id.action_add_to_favourite:
-                    Toast.makeText(mContext, "Add to favourite", Toast.LENGTH_SHORT).show();
+                case R.id.action_divert:
+                    Toast.makeText(mContext, "Are you sure want to divert the order", Toast.LENGTH_SHORT).show();
                     return true;
-                case R.id.action_like:
-                    Toast.makeText(mContext, "Liked", Toast.LENGTH_SHORT).show();
+                case R.id.action_cancle:
+                    Toast.makeText(mContext, "Are you sure want to cancel the order ", Toast.LENGTH_SHORT).show();
                     return true;
 
-                case R.id.action_donate:
-                    Toast.makeText(mContext, "Donated", Toast.LENGTH_SHORT).show();
+                case R.id.action_return:
+                    Toast.makeText(mContext, "Are you sure want to return the order", Toast.LENGTH_SHORT).show();
                     return true;
 
                 default:

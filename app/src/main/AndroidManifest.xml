@@ -62,19 +62,21 @@
 
         <activity android:name=".screens.collection.OrderCollection"></activity>
 
-        <activity android:name=".screens.collection.OrderDistribution"></activity>
+        <activity android:name=".screens.collection.LunchDinnerScreen"></activity>
 
-        <activity android:name=".screens.delivery.DistributionCollect"></activity>
+        <activity android:name=".screens.delivery.DistributionCollectScreen"></activity>
 
-        <activity android:name=".screens.delivery.CustomerDelivery"></activity>
+        <activity android:name=".screens.delivery.dinner.Cust_DeliveryScreen"></activity>
 
-        <activity android:name=".screens.returnprocess.ReturnVender"></activity>
+        <activity android:name=".screens.returnprocess.dinner.ReturnVenderDinnerScreen"></activity>
 
-        <activity android:name=".screens.returnprocess.ReturnDC"></activity>
+        <activity android:name=".screens.returnprocess.ReturnDcLunchScreen"></activity>
 
         <activity android:name=".screens.myprofile.MyProfile"></activity>
 
         <activity android:name=".screens.feedback.FeedbackScreen"></activity>
+
+
 
 
 

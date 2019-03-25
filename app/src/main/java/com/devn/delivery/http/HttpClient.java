@@ -1,8 +1,8 @@
 package com.devn.delivery.http;
 
-import com.devn.mess.BuildConfig;
-import com.devn.mess.http.utils.Auth;
-import com.devn.mess.http.utils.RegisterRequest;
+import com.devn.delivery.BuildConfig;
+import com.devn.delivery.http.utils.Auth;
+import com.devn.delivery.http.utils.RegisterRequest;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

@@ -8,7 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.devn.delivery.R;
 import com.devn.delivery.controller.SuperMessActivity;
@@ -55,7 +54,7 @@ public class OrderCollection extends SuperMessActivity {
         return rootView;
     }
     public void dist(){
-        Intent intent = new Intent(this,  OrderDistribution.class);
+        Intent intent = new Intent(this,  LunchDinnerScreen.class);
         startActivity(intent);
 
     }
@@ -64,12 +63,6 @@ public class OrderCollection extends SuperMessActivity {
     protected void onDevNReady(View contentView) throws DevNExcp, DevNExcpTh {
 
     }
-
- //   @Override
- //   protected String screenTitle() throws DevNExcp, DevNExcpTh {
- //       setTitle("OrderCollection");
- //      return "OrderCollection";
- //   }
 
 
     @Override

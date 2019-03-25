@@ -8,14 +8,13 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.devn.delivery.screens.collection.LunchDinnerScreen;
 import com.devn.delivery.screens.collection.OrderCollection;
-import com.devn.delivery.screens.collection.OrderDistribution;
-import com.devn.delivery.screens.delivery.CustomerDelivery;
-import com.devn.delivery.screens.delivery.DistributionCollect;
+import com.devn.delivery.screens.delivery.DistributionCollectScreen;
+import com.devn.delivery.screens.delivery.dinner.Cust_DeliveryScreen;
 import com.devn.delivery.screens.feedback.FeedbackScreen;
 import com.devn.delivery.screens.myprofile.MyProfile;
-import com.devn.delivery.screens.returnprocess.ReturnDC;
-import com.devn.delivery.screens.returnprocess.ReturnVender;
+import com.devn.delivery.screens.returnprocess.ReturnDcLunchScreen;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
@@ -163,7 +162,7 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
     public static void gotoOrderDistribution(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.setClass(context, OrderDistribution.class);
+        intent.setClass(context, LunchDinnerScreen.class);
         ((Activity) context).startActivity(intent);
 
     }
@@ -171,7 +170,7 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
     public static void gotoDistributionCollect(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.setClass(context, DistributionCollect.class);
+        intent.setClass(context, DistributionCollectScreen.class);
         ((Activity) context).startActivity(intent);
 
     }
@@ -179,7 +178,7 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
     public static void gotoCustomerDelivery(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.setClass(context, CustomerDelivery.class);
+        intent.setClass(context, Cust_DeliveryScreen.class);
         ((Activity) context).startActivity(intent);
 
     }
@@ -187,7 +186,7 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
     public static void gotoReturn(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.setClass(context, ReturnDC.class);
+        intent.setClass(context, ReturnDcLunchScreen.class);
         ((Activity) context).startActivity(intent);
 
     }

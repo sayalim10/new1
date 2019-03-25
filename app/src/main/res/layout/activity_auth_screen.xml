@@ -76,7 +76,8 @@
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/id_login_screen_login_btn"
             style="@style/button_medium"
-            android:text="@string/verify" />
+            android:text="@string/verify"
+            android:background="@drawable/button_border"/>
 
     </LinearLayout>
 

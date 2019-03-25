@@ -6,11 +6,56 @@
     android:orientation="vertical"
     tools:context="screens.delivery.DistributionCollect">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="tushar" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/layout_background_color"
+        android:padding="1dp"
+        android:orientation="horizontal">
 
+        <CheckBox
+            android:id="@+id/id_login_screen_tc_cb"
+            style="@style/checkbox_small"
+            android:layout_margin="3dp"
+            android:checked="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_tv_small"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:text="@string/select_all"
+                android:textColor="@color/colorthird"
+                android:textSize="@dimen/textsize_13_sp" />
+
+            <TextView
+                style="@style/style_tv_small"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:text="@string/lunch"
+                android:textColor="@color/colorthird"
+                android:textSize="@dimen/textsize_20_sp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/id_login_screen_login_btn1"
+                style="@style/button_medium"
+                android:layout_width="50dp"
+                android:layout_height="34dp"
+                android:background="@drawable/selector_red" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/id_login_screen_login_btn2"
+                style="@style/button_medium"
+                android:layout_width="50dp"
+                android:layout_height="34dp"
+                android:background="@drawable/selector_green" />
+        </LinearLayout>
+    </LinearLayout>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/DistributionCollect"
         android:layout_width="match_parent"

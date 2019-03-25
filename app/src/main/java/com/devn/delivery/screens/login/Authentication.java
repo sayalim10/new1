@@ -7,18 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.devn.delivery.R;
-import com.devn.delivery.controller.SuperMessActivity;
-import com.devn.delivery.devn_exceptions.DevNExcp;
-import com.devn.delivery.devn_exceptions.DevNExcpTh;
 import com.devn.delivery.screens.collection.OrderCollection;
-import com.devn.delivery.screens.collection.OrderDistribution;
-import com.devn.delivery.screens.delivery.CustomerDelivery;
-import com.devn.delivery.screens.delivery.DistributionCollect;
-import com.devn.delivery.screens.feedback.FeedbackScreen;
-import com.devn.delivery.screens.feedback.FeedbackScreen;
-import com.devn.delivery.screens.myprofile.MyProfile;
-import com.devn.delivery.screens.returnprocess.ReturnDC;
-import com.devn.delivery.screens.returnprocess.ReturnVender;
+import com.devn.delivery.screens.returnprocess.dinner.ReturnVenderDinnerScreen;
 
 public class Authentication  extends AppCompatActivity {
 

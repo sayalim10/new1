@@ -1,5 +1,6 @@
 package com.devn.delivery.screens.returnprocess;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,10 +10,10 @@ import android.widget.TextView;
 
 import com.devn.delivery.R;
 
-public class ReturnAdapter extends RecyclerView.Adapter<ReturnAdapter.ReturnViewHolder> {
+public class ReturnVenderLunchAdapter extends RecyclerView.Adapter<ReturnVenderLunchAdapter.ReturnViewHolder> {
 
     private String[] data;
-    public ReturnAdapter(String[] data)
+    public ReturnVenderLunchAdapter(String[] data, Context mContext)
     {
         this.data = data;
     }

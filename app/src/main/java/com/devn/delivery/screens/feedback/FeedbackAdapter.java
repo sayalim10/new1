@@ -4,10 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.devn.delivery.screens.feedback.PrivacyPolicyFragment;
-
 public class FeedbackAdapter extends FragmentPagerAdapter {
-    final String[] tabNames = {"Company", "Complaints", "Apriciation"};
+    final String[] tabNames = {"Company", "Complaints","Apriciation"};
 
     public FeedbackAdapter(FragmentManager fm) {
         super(fm);

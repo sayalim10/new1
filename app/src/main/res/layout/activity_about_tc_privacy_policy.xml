@@ -20,6 +20,7 @@
         app:tabTextColor="@color/theme_tv_black">
     </android.support.design.widget.TabLayout>
 
+
     <android.support.v4.view.ViewPager
         android:id="@+id/id_about_vp"
         android:layout_width="match_parent"
