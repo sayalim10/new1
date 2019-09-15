@@ -1,5 +1,6 @@
 <resources>
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
     <!-- start **** Application theme. -->
     <style name="MaterialDrawerTheme.TranslucentStatus" parent="MaterialTheme.TranslucentStatus">
         <!-- Here we setting appcompat’s actionBarStyle -->

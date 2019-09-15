@@ -4,7 +4,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
 import com.devn.delivery.R;
 import com.devn.delivery.controller.SuperMessActivity;
 import com.devn.delivery.devn_exceptions.DevNExcp;
@@ -88,6 +87,6 @@ public class HomeScreen extends SuperMessActivity {
 
     @Override
     protected void onBackButtonPressed() {
-        Alert.INSTANCE(HomeScreen.this).show(Alert.TYPE.OK_CANCEL, "Do you want to exit from application?", new String[]{"No", "Yes"}, yesListener);
+      Alert.INSTANCE(HomeScreen.this).show(Alert.TYPE.OK_CANCEL, "Do you want to exit from application?", new String[]{"No", "Yes"}, yesListener);
     }
 }

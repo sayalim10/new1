@@ -30,7 +30,20 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [appName: "FDS"]
+            buildConfigField('String', "HOST", '"http://server.aminfotech.com/wp-json/"')
+//            signingConfig signingConfigs.config
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [appName: "FDS_Test"]
+            buildConfigField('String', "HOST", '"http://server.aminfotech.com/wp-json/"')
+//            signingConfig signingConfigs.config
         }
     }
 }
@@ -63,7 +76,8 @@ dependencies {
 //    compile 'com.github.stephenbaidu:placepicker:1.1'
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.google.android.gms:play-services-places:11.6.0'
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.' +
+            'google.code.gson:gson:2.8.2'
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
 //    implementation 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;
@@ -71,5 +85,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:11.6.0'
     implementation 'com.roughike:bottom-bar:2.3.1'
     implementation 'com.github.bkhezry:PersianSearchableSpinner:1.4.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.1.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
 }
 apply plugin: 'com.google.gms.google-services'

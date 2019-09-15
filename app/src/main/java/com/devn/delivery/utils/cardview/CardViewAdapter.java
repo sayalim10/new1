@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.devn.delivery.R;
-import com.devn.delivery.utils.cardview.MessMenu;
 
 import java.util.List;
 
@@ -96,17 +95,17 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.MyView
         @Override
         public boolean onMenuItemClick(MenuItem menuItem) {
             switch (menuItem.getItemId()) {
-                case R.id.action_order:
+                case R.id.action_reject:
                     Toast.makeText(mContext, "Ordered", Toast.LENGTH_SHORT).show();
                     return true;
-                case R.id.action_add_to_favourite:
+                case R.id.action_divert:
                     Toast.makeText(mContext, "Add to favourite", Toast.LENGTH_SHORT).show();
                     return true;
-                case R.id.action_like:
+                case R.id.action_cancle:
                     Toast.makeText(mContext, "Liked", Toast.LENGTH_SHORT).show();
                     return true;
 
-                case R.id.action_donate:
+                case R.id.action_return:
                     Toast.makeText(mContext, "Donated", Toast.LENGTH_SHORT).show();
                     return true;
 

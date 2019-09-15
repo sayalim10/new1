@@ -6,7 +6,6 @@ import android.os.Handler;
 
 import com.devn.delivery.R;
 import com.devn.delivery.utils.Functions;
-import com.devn.delivery.welcome.LoginScreen;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -27,7 +26,7 @@ public class DisclaimerScreen extends Activity {
 
     @OnClick(R.id.id_disclaimer_accept_btn)
     public void onAcceptBtnClicked() {
-        Functions.launch(this, LoginScreen.class);
+     //   Functions.launch(this, login_page.class);
         finish();
     }
 
