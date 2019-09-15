@@ -37,8 +37,8 @@
 
     <ScrollView
         android:id="@+id/id_frame_container_scrollview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="94dp"
+        android:layout_height="24dp"
         android:layout_below="@id/id_toolbar"
         android:fillViewport="true"
         android:visibility="gone">
@@ -168,6 +168,7 @@
             android:id="@+id/id_super_container_non_scrollable"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/id_super_container_non_scrollable_title_tv"></RelativeLayout>
+            android:layout_below="@+id/id_super_container_non_scrollable_title_tv">
+        </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

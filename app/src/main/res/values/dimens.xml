@@ -26,7 +26,10 @@
     <dimen name="card_view_count">12dp</dimen>
     <dimen name="card_view_overflow_width">20dp</dimen>
     <dimen name="card_view_overflow_height">30dp</dimen>
+    <dimen name="card_view_overflow_width1">50dp</dimen>
+    <dimen name="card_view_overflow_height1">30dp</dimen>
     <dimen name="card_view_overflow_margin_top">10dp</dimen>
+    <dimen name="card_view_overflow_margin_end">200dp</dimen>
 
 
     <!-- New Home Screen design -->

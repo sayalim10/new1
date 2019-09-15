@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/id_ur_profile_title_tv"
+        style="@style/style_tv_medium"
+        android:autoLink="all"
+        android:gravity="center_horizontal"
+        android:linksClickable="false"
+        android:selectAllOnFocus="false"
+        android:text="Nitin Kalokhe" />
+
+
+    <TextView
+        android:id="@+id/id_ur_profile_cust_id_tv"
+        style="@style/style_tv_small"
+        android:layout_below="@+id/id_ur_profile_title_tv"
+        android:layout_margin="0dp"
+        android:autoLink="all"
+        android:gravity="right"
+        android:linksClickable="false"
+        android:padding="0dp"
+        android:selectAllOnFocus="false"
+        android:text="ID: 11332" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_ur_profile_cust_id_tv"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ur_profileress_ttl_tv"
+            android:orientation="vertical">
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_mob_no_wrapper"
+                style="@style/style_textinputlayout"
+                android:orientation="horizontal"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_mob_no_et"
+                    style="@style/style_et_medium"
+                    android:hint="Your mobile number"
+                    android:inputType="phone">
+                </android.support.design.widget.TextInputEditText>
+
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="@dimen/margin_10_dp"
+                    android:src="@mipmap/ic_launcher" />
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_mail_id_wrapper"
+                style="@style/style_textinputlayout"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_mail_id_et"
+                    style="@style/style_et_medium"
+                    android:hint="Your e-mail Id"
+                    android:inputType="textEmailAddress">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_password_wrapper"
+                style="@style/style_textinputlayout"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_password_et"
+                    style="@style/style_et_medium"
+                    android:layout_marginTop="0dp"
+                    android:hint="Your password"
+                    android:inputType="textPassword">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_password_wrapper1"
+                style="@style/style_textinputlayout"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_password_et1"
+                    style="@style/style_et_medium"
+                    android:layout_marginTop="0dp"
+                    android:hint="CityID#-AreaID#-ZoneID#">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_f_name_wrapper"
+                style="@style/style_textinputlayout"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_f_name_et"
+                    style="@style/style_et_medium"
+                    android:hint="ClusterID-ClusterName">
+                </android.support.design.widget.TextInputEditText>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/id_ur_profile_update_profile_btn"
+                    style="@style/button_medium"
+                    android:layout_gravity="center"
+                    android:background="@color/green_selector_pressed_color"
+                    android:text="@string/map" />
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_l_name_wrapper"
+                style="@style/style_textinputlayout"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_l_name_et"
+                    style="@style/style_et_medium"
+                    android:hint="DC ID - DC Address">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_l_name_wrapper1"
+                style="@style/style_textinputlayout"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_l_name_et1"
+                    style="@style/style_et_medium"
+                    android:hint="List Of Mess-Ganesh Mess">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_home_addr_wrapper"
+                style="@style/style_textinputlayout"
+                android:layout_weight="1"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_home_addr_et"
+                    style="@style/style_et_medium"
+                    android:gravity="start"
+                    android:hint="Home address"
+                    android:lines="3"
+                    android:singleLine="false">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+            <com.devn.delivery.utils.MyTextInputLayout
+                android:id="@+id/id_ur_profile_your_work_addr_wrapper"
+                style="@style/style_textinputlayout"
+                android:layout_weight="1"
+                app:errorTextAppearance="@style/error_appearance">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_ur_profile_your_work_addr_et"
+                    style="@style/style_et_medium"
+                    android:gravity="start"
+                    android:hint="Work address"
+                    android:lines="3"
+                    android:singleLine="false">
+                </android.support.design.widget.TextInputEditText>
+            </com.devn.delivery.utils.MyTextInputLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

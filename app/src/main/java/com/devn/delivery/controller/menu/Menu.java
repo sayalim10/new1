@@ -12,7 +12,7 @@ public enum Menu implements Constants {
     /**
      * Go to Home Screen
      */
-    MENU_HOME_PAGE(APPLICATION_NAME, HOME, R.mipmap.menu_home_screen),
+
     /**
      * Exit App
      */
@@ -20,22 +20,22 @@ public enum Menu implements Constants {
     /**
      * TITLE_1 Details
      */
-    MENU_MY_PROFILE_TITLE(MENU_DRAWER_TITLE_1, MENU_DRAWER_TITLE_1, R.mipmap.menu_my_profile),
 
-    /**
-     * Home Product
-     */
-    MENU_MY_ORDERS(MENU_DRAWER_TITLE_2, MENU_DRAWER_TITLE_2, R.mipmap.menu_my_orders),
+
 
 
     /**
      * Utilities
      */
-    MENU_MY_WALLET(MENU_DRAWER_TITLE_4, "My Wallet", R.mipmap.menu_my_wallet),
-    MENU_NOTIFICATIONS(MENU_DRAWER_TITLE_4, "Notifications", R.mipmap.menu_notification),
+
+    MENU_MY_PROFILE(MENU_DRAWER_TITLE_2, "My Profile ", R.mipmap.menu_profile),
+    MENU_ORDER_COLLECTION(MENU_DRAWER_TITLE_2, "Order Collection", R.mipmap.menu_my_orders),
+    MENU_DISTRIBUTION(MENU_DRAWER_TITLE_2, "Distribution", R.mipmap.menu_about_us),
+    MENU_DC_COLLETION(MENU_DRAWER_TITLE_4, "DC Collection", R.mipmap.menu_my_wallet),
+    MENU_CUSTOMER_DELIVERY(MENU_DRAWER_TITLE_4, "Customer Delivery", R.mipmap.menu_my_profile),
+    MENU_RETURN_PROCESSING(MENU_DRAWER_TITLE_4, "Return Processing", R.mipmap.menu_my_orders1),
     MENU_FEEDBACK(MENU_DRAWER_TITLE_4, "Feedback", R.mipmap.menu_feedback),
-    MENU_ABOUT_US(MENU_DRAWER_TITLE_4, "About Us", R.mipmap.menu_about_us),
-    MENU_PAYMENT(MENU_DRAWER_TITLE_2, "Payments", R.mipmap.menu_payment);
+    MENU_OTHER(MENU_DRAWER_TITLE_4, "Other", R.mipmap.menu_my_orders2);
 
 
     Menu(String cat, String menu, long id) {

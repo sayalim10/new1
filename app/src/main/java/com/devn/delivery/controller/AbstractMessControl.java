@@ -3,12 +3,15 @@ package com.devn.delivery.controller;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -16,6 +19,8 @@ import android.widget.Toast;
 
 import com.devn.delivery.R;
 import com.devn.delivery.constants.Constants;
+//import com.devn.delivery.controller.home.HomeScreenView;
+import com.devn.delivery.controller.menu.HomeScreenAnimations;
 import com.devn.delivery.controller.menu.MenuListener;
 import com.devn.delivery.controller.menu.ProfileSetter;
 import com.devn.delivery.devn_exceptions.DevNExcp;
@@ -55,8 +60,9 @@ public abstract class AbstractMessControl extends NewAbstractionLayer implements
     private FrameLayout frameLayout = null;
     private TextView actionTV = null;
     private FirebaseAnalytics mFirebaseAnalytics;
-    private HomeScreenDrawer homeDrawer;
     private ProfileSetter mProfileSetter;
+    private HomeScreenDrawer homeDrawer;
+  //  private HomeScreenView homeScrenView;
 
     @Override
     protected View onSuperCreate(@Nullable final Bundle savedInstanceState) {
@@ -136,8 +142,13 @@ public abstract class AbstractMessControl extends NewAbstractionLayer implements
                     else if (titleTV != null)
                         titleTV.setVisibility(View.GONE);
 
+                    final String actionTitle = actionbarTitle();
                     actionTV = (TextView) toolbar.findViewById(R.id.id_toolbar_action_title_tv);
-                    updateActionbarTitle(actionbarTitle());
+                    if (actionTitle == null || actionTitle.length() == 0)
+                        actionTV.setVisibility(View.GONE);
+                    else
+                        ((ImageView) findViewById(R.id.id_toolbar_iv)).setVisibility(View.GONE);
+                    updateActionbarTitle(actionTitle);
                     onDevNReady(getWindow().getDecorView().findViewById(android.R.id.content));
                 } catch (Exception devNexc) {
                     try {

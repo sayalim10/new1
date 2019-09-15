@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/id_about_tl"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:clipToPadding="false"
+        app:tabBackground="@color/md_grey_400"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue_actionbar_background"
+        app:tabMinWidth="50dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/md_white_1000"
+        app:tabTextColor="@color/theme_tv_black">
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_about_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_about_tl">
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

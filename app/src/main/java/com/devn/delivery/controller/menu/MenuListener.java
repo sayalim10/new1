@@ -8,23 +8,27 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
-import com.devn.delivery.controller.menu.IProductListener;
-import com.devn.delivery.controller.menu.ProfileSetter;
-import com.devn.delivery.screens.home.HomeScreen;
+import com.devn.delivery.screens.collection.LunchDinnerScreen;
+import com.devn.delivery.screens.collection.OrderCollection;
+import com.devn.delivery.screens.delivery.DistributionCollectScreen;
+import com.devn.delivery.screens.delivery.dinner.Cust_DeliveryScreen;
+import com.devn.delivery.screens.feedback.FeedbackScreen;
+import com.devn.delivery.screens.myprofile.MyProfile;
+import com.devn.delivery.screens.returnprocess.ReturnDcLunchScreen;
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 
-import static com.devn.delivery.controller.menu.Menu.MENU_ABOUT_US;
-import static com.devn.delivery.controller.menu.Menu.MENU_FEEDBACK;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_PROFILE_TITLE;
+import static com.devn.delivery.controller.menu.Menu.MENU_CUSTOMER_DELIVERY;
+import static com.devn.delivery.controller.menu.Menu.MENU_DC_COLLETION;
+import static com.devn.delivery.controller.menu.Menu.MENU_DISTRIBUTION;
 import static com.devn.delivery.controller.menu.Menu.MENU_EXIT_APP;
-import static com.devn.delivery.controller.menu.Menu.MENU_HOME_PAGE;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_ORDERS;
-import static com.devn.delivery.controller.menu.Menu.MENU_NOTIFICATIONS;
-import static com.devn.delivery.controller.menu.Menu.MENU_MY_WALLET;
-import static com.devn.delivery.controller.menu.Menu.MENU_PAYMENT;
+import static com.devn.delivery.controller.menu.Menu.MENU_FEEDBACK;
+import static com.devn.delivery.controller.menu.Menu.MENU_MY_PROFILE;
+import static com.devn.delivery.controller.menu.Menu.MENU_ORDER_COLLECTION;
+import static com.devn.delivery.controller.menu.Menu.MENU_OTHER;
+import static com.devn.delivery.controller.menu.Menu.MENU_RETURN_PROCESSING;
 
 /**
  * Created by Nitin.Kalokhe on 23-06-2017.
@@ -89,21 +93,22 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
         if (SELECTED_ID == MENU_EXIT_APP.getIdInt())
             exitApplication(mContext);
 
-        if (SELECTED_ID == MENU_HOME_PAGE.getIdInt())
-            gotoHomeScren(mContext);
-        else if (SELECTED_ID == MENU_MY_ORDERS.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_MY_WALLET.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_PAYMENT.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_NOTIFICATIONS.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_MY_PROFILE_TITLE.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_FEEDBACK.getIdInt())
-            Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
-        else if (SELECTED_ID == MENU_ABOUT_US.getIdInt())
+
+        if (SELECTED_ID == MENU_MY_PROFILE.getIdInt())
+            gotoProfile(mContext);
+        else  if (SELECTED_ID == MENU_FEEDBACK.getIdInt())
+            gotoFeedback(mContext);
+        else if (SELECTED_ID == MENU_ORDER_COLLECTION.getIdInt())
+            gotoOrderCollection(mContext);
+        else if (SELECTED_ID == MENU_DC_COLLETION.getIdInt())
+            gotoDistributionCollect(mContext);
+        else if (SELECTED_ID == MENU_DISTRIBUTION.getIdInt())
+            gotoOrderDistribution(mContext);
+        else if (SELECTED_ID == MENU_CUSTOMER_DELIVERY.getIdInt())
+            gotoCustomerDelivery(mContext);
+        else if (SELECTED_ID == MENU_RETURN_PROCESSING.getIdInt())
+            gotoReturn(mContext);
+        else if (SELECTED_ID == MENU_OTHER.getIdInt())
             Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
         else if (SELECTED_ID == MENU_EXIT_APP.getIdInt())
             Toast.makeText(mContext, "Position: " + position + "\nID: " + drawerItem.getIdentifier(), Toast.LENGTH_SHORT).show();
@@ -146,10 +151,58 @@ public class MenuListener implements Drawer.OnDrawerItemClickListener, Drawer.On
     }
 
 
-    public static void gotoHomeScren(Context context) {
+    public static void gotoOrderCollection(Context context) {
         Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.setClass(context, HomeScreen.class);
+        intent.setClass(context, OrderCollection.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoOrderDistribution(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, LunchDinnerScreen.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoDistributionCollect(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, DistributionCollectScreen.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoCustomerDelivery(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, Cust_DeliveryScreen.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoReturn(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, ReturnDcLunchScreen.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoFeedback(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, FeedbackScreen.class);
+        ((Activity) context).startActivity(intent);
+
+    }
+
+    public static void gotoProfile(Context context) {
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.setClass(context, MyProfile.class);
         ((Activity) context).startActivity(intent);
 
     }

@@ -1,13 +1,13 @@
 package com.devn.delivery.http;
 
-import com.devn.mess.http.utils.Auth;
-import com.devn.mess.http.utils.RegisterRequest;
+import com.devn.delivery.http.utils.Auth;
+import com.devn.delivery.http.utils.RegisterRequest;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-import static com.devn.mess.http.Api.REGISTER;
+import static com.devn.delivery.http.Api.REGISTER;
 
 public interface IHttpInterface {
 
